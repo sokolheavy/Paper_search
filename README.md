@@ -1,24 +1,29 @@
-## Auto-GPT Semantic Scholar Search Plugin
+## Paper_search
 
-A plugin adding [Semantic Scholar API](https://www.semanticscholar.org/) integration into Auto GPT
+Auto-GPT Plugin for Semantic Scholar Search [Semantic Scholar API](https://www.semanticscholar.org/).
 
-## Features
+## Overview
 
 - Retrieve related papers from [unofficial semantic scholar library](https://github.com/danielnsilva/semanticscholar) via the `search_papers` command
 
-## Installation
+## Instructions
 
-1. Clone this repo as instructed in the main repository
-2. Add this chunk of code to the `.env` file within AutoGPT:
+- Install the requirements
+
+```bash
+pip install -r requirements.txt
+```
+
+Add this chunk of code to the `.env` file within AutoGPT:
 
 ```
 ################################################################################
-### SEMANTIC SCHOLAR SEARCH SETTINGS
+### PAPER SEARCH SETTINGS
 ################################################################################
 
-SS_SEARCH_YEAR=2022 # limit of search year , default: None
-SS_SEARCH_LIMIT=100 # limit of kept results (sreened by citation), default: 100
-SS_SEARCH_FIELDS_OF_STUDY=['Computer Science'] # limit of search fields of study, default: None
+SS_SEARCH_YEAR=2022 # limit of year, default: None
+SS_SEARCH_LIMIT=100 # limit of kept results (screened by citation), default: 100
+SS_SEARCH_FIELDS_OF_STUDY=['NLP'] # limit of search fields of study, default: None
 
 ```
 
