@@ -1,25 +1,26 @@
-# Auto-GPT-Plugin-Template
-A starting point for developing your own external plug-in for Auto-GPT
+## Paper_search
 
-### Notes for plugin developers
+Auto-GPT Plugin for Semantic Scholar Search [Semantic Scholar API](https://www.semanticscholar.org/).
 
-- If you want your plugin to live within the codebase, fork the [plugins repo](https://github.com/Significant-Gravitas/Auto-GPT-Plugins) instead. Read the notes there
-- For a more thorough and current guide, please refer to the [plugins repository](https://github.com/Significant-Gravitas/Auto-GPT-Plugins).
-- If you use this repo for your own plugin, **EDIT This README**
+## Overview
 
-### How to use a plugin
+- Retrieve related papers from [unofficial semantic scholar library](https://github.com/danielnsilva/semanticscholar) via the `search_papers` command
 
-1. **Clone the plugin repo** into the Auto-GPT's plugins folder
-2. **Install the plugin's dependencies (if any):**
-   Navigate to the plugin's folder in your terminal, and run the following command to install any required dependencies:
+## Instructions
 
-   ``` shell
-      pip install -r requirements.txt
-   ```
-4. Update your plugins_config.yaml file to enable the plugin. If you skip this step the plugin won't be loaded
+- Install the requirements
 
-   ```shell
-   plugin_folder:
-      - config: {} # Configs from the plugin README and installation instructions.
-      - enabled: true
-   ```
+```bash
+pip install -r requirements.txt
+```
+
+Add this chunk of code to the `.env` file within AutoGPT:
+
+```
+################################################################################
+### PAPER SEARCH SETTINGS
+################################################################################
+SS_SEARCH_YEAR=2022 # limit of year, default: None
+SS_SEARCH_LIMIT=100 # limit of kept results (screened by citation), default: 100
+SS_SEARCH_FIELDS_OF_STUDY=['NLP'] # limit of search fields of study, default: None
+```
