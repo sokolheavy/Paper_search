@@ -6,6 +6,8 @@ Auto-GPT Plugin for Semantic Scholar Search [Semantic Scholar API](https://www.s
 
 - Retrieve related papers from [unofficial semantic scholar library](https://github.com/danielnsilva/semanticscholar) via the `search_papers` command
 
+- file:///home/olena/Downloads/untitled.png
+
 ## Instructions
 
 - Install the requirements
