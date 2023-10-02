@@ -4,7 +4,7 @@ import unittest
 
 import pytest
 
-from semantic_scholar_search import SemanticScholarSearch
+from src.paper_search.paper_search import SemanticScholarSearch
 
 
 class TestSemanticScholarSearch(unittest.TestCase):
