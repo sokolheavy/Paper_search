@@ -6,7 +6,7 @@ Auto-GPT Plugin for Semantic Scholar Search [Semantic Scholar API](https://www.s
 
 - Retrieve related papers from [unofficial semantic scholar library](https://github.com/danielnsilva/semanticscholar) via the `search_papers` command
 
-- ![untitled](https://github.com/sokolheavy/Paper_search/assets/36013697/8cad586c-e719-4583-815c-ba35ba242b8e)
+ ![untitled](https://github.com/sokolheavy/Paper_search/assets/36013697/8cad586c-e719-4583-815c-ba35ba242b8e)
 
 ## Instructions
 
